@@ -10,12 +10,4 @@ export default defineConfig({
         }),
         react(),
     ],
-    // Forzamos a Vite a usar rutas relativas seguras en producción
-    base: './',
-    server: {
-        cors: true,
-        hmr: {
-            protocol: 'wss', // Forzar WebSockets Seguros
-        },
-    },
 });
