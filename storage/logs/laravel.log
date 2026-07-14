@@ -1,0 +1,6 @@
+[2026-07-14 02:27:00] local.INFO: MailgunChannel: correo enviado {"lead_id":19,"status":404} 
+[2026-07-14 02:27:00] local.INFO: TwilioChannel: mensaje enviado {"lead_id":19,"status":404} 
+[2026-07-14 02:27:00] local.INFO: NotifyWonDeal: resultado de notificación {"lead_id":19,"result":{"email":{"success":false,"provider_response":[]},"whatsapp":{"success":false,"provider_response":{"code":20404,"message":"The requested resource /2010-04-01/Accounts//Messages.json was not found","more_info":"https://www.twilio.com/docs/errors/20404","status":404}}}} 
+[2026-07-14 02:27:03] local.INFO: MailgunChannel: correo enviado {"lead_id":19,"status":404} 
+[2026-07-14 02:27:03] local.INFO: TwilioChannel: mensaje enviado {"lead_id":19,"status":404} 
+[2026-07-14 02:27:03] local.INFO: NotifyWonDeal: resultado de notificación {"lead_id":19,"result":{"email":{"success":false,"provider_response":[]},"whatsapp":{"success":false,"provider_response":{"code":20404,"message":"The requested resource /2010-04-01/Accounts//Messages.json was not found","more_info":"https://www.twilio.com/docs/errors/20404","status":404}}}} 
