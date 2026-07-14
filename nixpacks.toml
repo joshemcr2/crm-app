@@ -1,2 +1,5 @@
 [providers.php]
 version = "8.4"
+
+[phases.build]
+cmds = ["composer install --no-dev --no-scripts --prefer-dist --optimize-autoloader"]
