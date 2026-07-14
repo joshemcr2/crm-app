@@ -1,5 +1,17 @@
-[providers.php]
-version = "8.4"
+[variables]
+PHP_VERSION = "8.4"
+
+[phases.setup]
+nixPackages = [
+    "php84",
+    "php84Packages.composer",
+    "php84Extensions.pdo",
+    "php84Extensions.pdo_mysql"
+]
 
 [phases.build]
-cmds = ["composer install --no-dev --no-scripts --prefer-dist --optimize-autoloader"]
+cmds = [
+    "composer install --no-dev --prefer-dist --optimize-autoloader",
+    "npm install",
+    "npm run build"
+]
