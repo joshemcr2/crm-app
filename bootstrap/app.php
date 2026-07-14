@@ -13,6 +13,9 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        // Confía en el balanceador de carga de Railway para resolver el HTTPS
+        $middleware->trustProxies(at: '*');
+
         // Necesario para que Sanctum funcione en modo SPA (cookies + CSRF)
         $middleware->statefulApi();
 
